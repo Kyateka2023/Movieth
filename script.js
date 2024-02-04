@@ -188,14 +188,23 @@ videoHolder.style.height = "100%";
 
 //create a video element
 const videoTrailer = document.createElement("video");
-videoTrailer.setAttribute("src", "Clips/y2mate.com - SPIDERMAN ACROSS THE SPIDERVERSE Official Trailer HD_1080p.mp4");
-videoTrailer.setAttribute("poster", "Images/imagesspider1.jpeg");
 videoTrailer.setAttribute("width", "100%");
 videoTrailer.setAttribute("height", "350px");
 videoTrailer.setAttribute("type", "video/mp4");
 videoTrailer.setAttribute("id", "videoElementID");
 
-//make the video attribute be the child to the parent
+// Set the source using the source element
+const sourceElement = document.createElement("source");
+sourceElement.setAttribute("src", "Clips/y2mate.com - SPIDERMAN ACROSS THE SPIDERVERSE Official Trailer HD_1080p.mp4");
+sourceElement.setAttribute("type", "video/mp4");
+
+// Set the poster attribute
+videoTrailer.setAttribute("poster", "Images/imagesspider1.jpeg");
+
+// Append the source element to the video element
+videoTrailer.appendChild(sourceElement);
+
+// Append the video element to the video holder div
 videoHolder.appendChild(videoTrailer);
 
 // Add controls attribute to enable player controls
