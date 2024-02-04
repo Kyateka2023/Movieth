@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="moveithlogo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Changa:200,300,regular,500,600,700,800" rel="stylesheet" />
+    <title>MOVIETH | WATCH FOR THE LATEST MOVIES/SERIES.</title>
+    <style>
+        .movie-info-button
+        {
+            padding: 3rem;
+        }
+
+        #video-state
+        {
+            color: whitesmoke;
+            background-image: linear-gradient(240deg, #3772ff 50%, #3773ffc6 50%);
+            border-radius: 50%;
+            font-size: 2rem;
+            height: 5rem;
+            width: 5rem;
+            border: none;
+            transition: all 0.5s;
+        }
+
+        #video-state:hover
+        {
+            transform: scale(1.1);
+        }
+
+        #video-state:active
+        {
+            background-image: linear-gradient(120deg, #3772ff 50%, #3773ffc6 50%);
+            transform: scale(0.9);
+        }
+    </style>
+</head>
+<body onload="resetSearchfunction()">
+    <div class="entire-section">
+        <header class="header">
+            <h1 class="banner">MOVIETH</h1>
+            <nav id="nav">
+                <a href="#" class="movies">MOVIES</a>
+                <a href="#" class="series">SERIES</a>
+                <div class="search-bar">
+                    <input type="search" name="movieSearchbar" id="search" placeholder="Search your favorite movies/series...">
+                    <a href="#" class="glass-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </nav>
+        </header>
+        <main class="home-main">
+            <section class="movie-info" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+
+                <video autoplay muted class="video-bg">
+                    <source src="Clips/Untitled video - Made with Clipchamp (1).mp4" type="video/mp4">
+                    Your browser does not support mp4. Try using Firefox or Chrome.
+                </video>
+
+                <h1 style="text-align: center; color: white;">SpiderMan: Across The SpiderVerse</h1>
+                <div class="movie-info-button">
+                    <button id="video-state"><i ></i></button>
+                </div>
+            </section>
+
+            <section class="trailer">
+                <div class="trailer-holder" id="trailer-holder-section">
+                    <a href="#" class="trailer-links" id="trailer-link">
+                        <div class="image-holder">
+                            <img src="Images/goldspider.jpg" alt="Spiderman across the spider verse." class="movie-image">
+                        </div>
+                        <p class="movie-name">Spiderman across the Spider Verse</p>
+                        <div class="year-rating">
+                            <p class="year">2023</p>
+                            <p class="rating"><i class="fa-solid fa-star" style="color: #FFD43B;"></i> 8.6/10 <i class="fa-brands fa-imdb" style="color: #FFD43B;"></i></p>
+                        </div>
+                    </a>
+                    <a href="#" class="trailer-links" id="trailer-link1">
+                        <div class="image-holder">
+                            <img src="Images/Mummies.jpg" alt="Mummies" class="movie-image">
+                        </div>
+                        <p class="movie-name">Mummies</p>
+                        <div class="year-rating">
+                            <p class="year">2023</p>
+                            <p class="rating"><i class="fa-solid fa-star" style="color: #FFD43B;"></i> 6/10 <i class="fa-brands fa-imdb" style="color: #FFD43B;"></i></p>
+                        </div>
+                    </a>
+                    <a href="#" class="trailer-links" id="trailer-link2">
+                        <div class="image-holder">
+                            <img src="Images/The-Beekeeper.jpeg" alt="The Beekeeper." class="movie-image">
+                        </div>
+                        <p class="movie-name">The Beekeeper</p>
+                        <div class="year-rating">
+                            <p class="year">2024</p>
+                            <p class="rating"><i class="fa-solid fa-star" style="color: #FFD43B;"></i> 6.5/10 <i class="fa-brands fa-imdb" style="color: #FFD43B;"></i></p>
+                        </div>
+                    </a>
+                    <a href="#" class="trailer-links" id="trailer-link3">
+                        <div class="image-holder">
+                            <img src="Images/wonka-poster.jpg" style="height: 21.5rem;" alt="Wonka." class="movie-image">
+                        </div>
+                        <p class="movie-name">Wonka</p>
+                        <div class="year-rating">
+                            <p class="year">2023</p>
+                            <p class="rating"><i class="fa-solid fa-star" style="color: #FFD43B;"></i> 7.2/10 <i class="fa-brands fa-imdb" style="color: #FFD43B;"></i></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="trailer-holder" id="trailer-holder-section1">
+                    <a href="#" class="trailer-links" id="trailer-link4">
+                        <div class="image-holder">
+                            <img src="Images/KungFuPanda-poster.jpg" style="height: 21.5rem;" alt="Kung Fu Panda." class="movie-image">
+                        </div>
+                        <p class="movie-name">Kung Fu Panda 4</p>
+                        <div class="year-rating">
+                            <p class="year">2024</p>
+                            <p class="rating"><i class="fa-solid fa-star" style="color: #FFD43B;"></i> Pending <i class="fa-brands fa-imdb" style="color: #FFD43B;"></i></p>
+                        </div>
+                    </a>
+                    <a href="#" class="trailer-links" id="trailer-link5">
+                        <div class="image-holder">
+                            <img src="Images/Despicable.jpg" alt="Despicable Me 4." class="movie-image">
+                        </div>
+                        <p class="movie-name">Despicable Me 4</p>
+                        <div class="year-rating">
+                            <p class="year">2024</p>
+                            <p class="rating"><i class="fa-solid fa-star" style="color: #FFD43B;"></i> Pending <i class="fa-brands fa-imdb" style="color: #FFD43B;"></i></p>
+                        </div>
+                    </a>
+                    <a href="#" class="trailer-links" id="trailer-link6">
+                        <div class="image-holder">
+                            <img src="Images/Tiger-poster.jpg" alt="The Tiger's Apprentice." class="movie-image">
+                        </div>
+                        <p class="movie-name">The Tiger's Apprentice</p>
+                        <div class="year-rating">
+                            <p class="year">2024</p>
+                            <p class="rating"><i class="fa-solid fa-star" style="color: #FFD43B;"></i> 5.6/10 <i class="fa-brands fa-imdb" style="color: #FFD43B;"></i></p>
+                        </div>
+                    </a>
+                    <a href="#" class="trailer-links" id="trailer-link7">
+                        <div class="image-holder">
+                            <img src="Images/Troll-band-together.jpg" style="height: 21.5rem;" alt="Trolls Band Together" class="movie-image">
+                        </div>
+                        <p class="movie-name">Trolls Band Together</p>
+                        <div class="year-rating">
+                            <p class="year">2023</p>
+                            <p class="rating"><i class="fa-solid fa-star" style="color: #FFD43B;"></i> 6/10 <i class="fa-brands fa-imdb" style="color: #FFD43B;"></i></p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+    </div>
+
+
+    <script>
+        function resetSearchfunction()
+        {
+            const search = document.getElementById("search");
+            search.value = "";
+        }
+
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

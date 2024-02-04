@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movieth | Loading Page</title>
+    <link rel="shortcut icon" href="moveithlogo.jpeg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Changa:200,300,regular,500,600,700,800" rel="stylesheet" />
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html
+        {
+            height: 100%;
+        }
+
+        body
+        {
+            height: 100dvh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #e6e8e6;
+        }
+
+        .loading-screen
+        {
+            position: relative;
+            margin: 2rem;
+            height: 4.5rem;
+            width: 4.5rem;
+            animation-name: rotate;
+            animation-delay: 0.5s;
+            animation-direction: normal;
+            transform: rotate(0deg);
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        /* rotate the loading screen */
+        @keyframes rotate 
+        {
+            0%
+            {
+                transform: rotate(0deg);
+            }
+
+            100%
+            {
+                transform: rotate(360deg);
+            }    
+        }
+
+        h1
+        {
+            font-family: 'Changa', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 2rem;
+            font-weight: 300;
+        }
+
+        .loading-dot1
+        {
+            background-color: #080708;
+            margin: 0 1rem;
+            border-radius: 50%;
+            padding: 0.5rem;
+            position: absolute;
+            top: 0;
+            left: -10%;
+            animation-name: circle1; 
+            animation-duration: 5s;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-timing-function: linear;
+        }
+
+        .loading-dot2
+        {
+            background-color: #3772ff;
+            margin: 0 1rem;
+            border-radius: 50%;
+            padding: 0.5rem;
+            position: absolute;
+            top: 0;
+            right: -10%;
+            animation-name: circle2;
+            animation-duration: 5s;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+        }
+
+        .loading-dot3
+        {
+            background-color: #df2935;
+            margin: 0 1rem;
+            border-radius: 50%;
+            padding: 0.5rem;
+            position: absolute;
+            bottom: 0;
+            left: -10%;
+            animation-name: circle3;
+            animation-timing-function: linear;
+            animation-direction: reverse;
+            animation-duration: 5s;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite ;
+        }
+
+        .loading-dot4
+        {
+            background-color: #fdca40;
+            margin: 0 1rem;
+            border-radius: 50%;
+            padding: 0.5rem;
+            position: absolute;
+            right: -10%;
+            bottom: 0;
+            animation-name: circle4;
+            animation-timing-function: linear;
+            animation-direction: reverse;
+            animation-duration: 5s;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite ;
+        }
+
+
+        /* animation for the first dot */
+        @keyframes circle1
+        {
+            0%
+            {
+                top: 0;  
+                left: -10%;
+            }
+
+            25%
+            {
+                top: 0;
+                left: 80%;
+            }
+
+            50%
+            {
+                top: 90%;
+                left: 80%;
+            }
+
+            75%
+            {
+                top: 90%;
+                left: -10%;
+            }
+
+            100%
+            {
+                top: 0;
+                left: -10%;
+            }
+        }
+
+        /* animation for the second dot */
+        @keyframes circle2
+        {
+            0%
+            {
+                top: 0;
+                right: -10%;
+            }
+
+            25%
+            {
+                top: 90%;
+                right: -10%;
+            }
+
+            50%
+            {
+                top: 90%;
+                right: 80%;
+            }
+
+            75%
+            {
+                top: 0;
+                right: 80%;
+            }
+
+            100%
+            {
+                top: 0;
+                right: -10%;
+            }
+        }
+
+        /* animation for the third dot */
+        @keyframes circle3
+        {
+            0%
+            {
+                bottom: 0;  
+                left: -10%;
+            }
+
+            25%
+            {
+                bottom: 0;
+                left: 80%;
+            }
+
+            50%
+            {
+                bottom: 90%;
+                left: 80%;
+            }
+
+            75%
+            {
+                bottom: 90%;
+                left: -10%;
+            }
+
+            100%
+            {
+                bottom: 0;
+                left: -10%;
+            }
+        }
+
+        /* animation for the fourth dot */
+        @keyframes circle4
+        {
+            0%
+            {
+                bottom: 0;
+                right: -10%;
+            }
+
+            25%
+            {
+                bottom: 90%;
+                right: -10%;
+            }
+
+            50%
+            {
+                bottom: 90%;
+                right: 80%;
+            }
+
+            75%
+            {
+                bottom: 0;
+                right: 80%;
+            }
+
+            100%
+            {
+                bottom: 0;
+                right: -10%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Loading...</h1>
+    <div class="loading-screen">
+        <div class="loading-dot1"></div>
+        <div class="loading-dot2"></div>
+        <div class="loading-dot3"></div>
+        <div class="loading-dot4"></div>
+    </div>
+
+    <script>
+        setTimeout(function() 
+        {
+            window.location.href = "../home.html";      
+        }, 3000);
+    </script>
+</body>
+</html>

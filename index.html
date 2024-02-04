@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Changa:200,300,regular,500,600,700,800" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="moveithlogo.jpeg" type="image/x-icon">
+    <title>MOVIETH | Welcome Page</title>
+    <style>
+        .backgroundImg
+        {
+            background-image: url(moviethimg.jpg);
+            background-repeat: no-repeat;
+            background-size:  contain;
+            background-position: center;
+            background-attachment: fixed;
+            height: 95%;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .entry-section
+        {
+            padding: 1rem;
+            background: rgba(19, 19, 19);
+            color: whitesmoke;
+            box-shadow: 4px 4px #df2935, 8px 8px #fdca40;
+            width: 40rem;
+            height: 40rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Changa', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .entry-heading
+        {
+            margin: 3rem 0;
+            font-size: 3.5rem;
+            text-align: center;
+        }
+
+        .entry-span
+        {
+            font-size: 3rem;
+            font-family: 'Great Vibes', 'Courier New', Courier, monospace;
+            color: #3772ff;
+        }
+
+        .entry-p1
+        {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .entry-watch
+        {
+            font-size: 1.5rem;
+            padding: 0 0.3rem;
+            color: #df2935dc;
+            font-weight: bold;
+        }
+
+        .entry-fun
+        {
+            font-size: 1.5rem;
+            padding: 0 0.3rem;
+            color: #fdcb40d8;
+            font-weight: bold;
+        }
+
+        .entry-popcorn
+        {
+            font-size: 1.5rem;
+            padding: 0 0.3rem;
+            color: #e6e8e6;
+            font-weight: bold;
+        }
+
+        .entry-button
+        {
+            background-image: linear-gradient(60deg, #3772ff 50%, #3773ffc6 50%);
+            color: white;
+            border: none;
+            width: 6rem;
+            height: 6rem;
+            border-radius: 50%;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+
+        .entry-button:hover
+        {
+            transform: scale(1.1);
+        }
+
+        .entry-button:active
+        {
+            background-image: linear-gradient(240deg, #3772ff 50%, #3773ffc6 50%);
+            transform: scale(0.9);
+        }
+
+        @media screen and (max-width: 786px)
+        {
+            .entry-section
+            {
+
+                width: 90%;
+                height: 40rem;
+
+            }
+        }
+
+        @media screen and (max-width: 576px)
+        {
+            .entry-section
+            {
+
+                width: 90%;
+                height: 30rem;
+
+            }
+
+            .entry-heading
+            {
+                font-size: 2rem;
+                margin: 2rem 0;
+            }
+
+            .entry-span
+            {
+                font-size: 2rem;
+            }
+
+            .entry-p1
+            {
+                font-size: 0.8rem;
+            }
+
+            .entry-watch, .entry-fun, .entry-popcorn
+            {
+                font-size: 1.1rem;
+                padding: 0;
+            }
+
+            .entry-button
+            {
+                width: 5rem;
+                height: 5rem;
+            }
+
+            footer
+            {
+                font-size: 0.8rem;
+            }
+        }
+
+    footer
+    {
+        background-color:  rgb(33, 33, 33);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        font-size: 1rem;
+        height: 5%;
+    }
+    </style>
+</head>
+<body>
+    <div class="backgroundImg" id="backgroundImgID">
+        <div class="entry-section">
+            <h1 class="entry-heading">Welcome to <span class="entry-span">MOVIETH</span></h1>
+            <p class="entry-p1">Where we provide the best quality content for our customers <br><br> <span class="entry-watch">Watch.</span> <span class="entry-fun">Have fun.</span> <span class="entry-popcorn">Don't forget the popcorn</span></p>
+            <button id="entryButton" class="entry-button"><i class="fa-solid fa-play"></i></button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; All rights reserved. Givendarian coder</p>
+    </footer>
+    <script>
+        const Image = document.getElementById("backgroundImgID");
+        if(window.innerWidth < window.innerHeight)
+        {
+            Image.style.backgroundImage = "url('droidmovieth.jpg')";
+            Image.style.backgroundSize = "cover";
+            console.log("Protrait");
+        }
+
+        // time to store a buttin in a variable
+        const entryButton = document.getElementById("entryButton");
+        
+        function entryFunction() 
+        {
+            setTimeout(function() 
+            {
+                window.location.href = "LoadingPages/loading.html";      
+            }, 2000);
+        }
+
+        entryButton.addEventListener("click", entryFunction);
+
+    </script>
+</body>
+</html>
