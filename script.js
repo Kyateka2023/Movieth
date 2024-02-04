@@ -192,6 +192,7 @@ videoTrailer.setAttribute("src", "Clips/y2mate.com - SPIDERMAN ACROSS THE SPIDER
 videoTrailer.setAttribute("poster", "Images/imagesspider1.jpeg");
 videoTrailer.setAttribute("width", "100%");
 videoTrailer.setAttribute("height", "350px");
+videoTrailer.setAttribute("type", "video/mp4");
 videoTrailer.setAttribute("id", "videoElementID");
 
 //make the video attribute be the child to the parent
@@ -270,6 +271,7 @@ videoTrailer1.setAttribute("src", "Clips/y2mate.com - Mummies Official Trailer 2
 videoTrailer1.setAttribute("width", "100%");
 videoTrailer1.setAttribute("poster", "Images/Mummiesposter.jpeg");
 videoTrailer1.setAttribute("height", "350px");
+videoTrailer1.setAttribute("type", "video/mp4");
 videoTrailer1.setAttribute("id", "videoElement1ID");
 
 //make the video attribute be the child to the parent
@@ -345,6 +347,7 @@ videoTrailer2.setAttribute("src", "Clips/y2mate.com - THE BEEKEEPER Official Res
 videoTrailer2.setAttribute("width", "100%");
 videoTrailer2.setAttribute("poster", "Images/The-Beekeeper-Season-2-release-date-poster.jpg");
 videoTrailer2.setAttribute("height", "350px");
+videoTrailer2.setAttribute("type", "video/mp4");
 videoTrailer2.setAttribute("id", "videoElement2ID");
 
 //make the video attribute be the child to the parent
@@ -418,6 +421,7 @@ videoTrailer3.setAttribute("src", "Clips/y2mate.com - WONKA Official Trailer_144
 videoTrailer3.setAttribute("width", "100%");
 videoTrailer3.setAttribute("poster", "Images/wonka-poster.jpg");
 videoTrailer3.setAttribute("height", "350px");
+videoTrailer3.setAttribute("type", "video/mp4");
 videoTrailer3.setAttribute("id", "videoElement3ID");
 
 //make the video attribute be the child to the parent
@@ -492,6 +496,7 @@ videoTrailer4.setAttribute("src", "Clips/y2mate.com - KUNG FU PANDA 4 Official T
 videoTrailer4.setAttribute("poster", "Images/KungFuPanda-poster.jpg");
 videoTrailer4.setAttribute("width", "100%");
 videoTrailer4.setAttribute("height", "350px");
+videoTrailer4.setAttribute("type", "video/mp4");
 videoTrailer4.setAttribute("id", "videoElement4ID");
 
 //make the video attribute be the child to the parent
@@ -567,6 +572,7 @@ videoTrailer5.setAttribute("src", "Clips/y2mate.com - Despicable Me 4 Official T
 videoTrailer5.setAttribute("poster", "Images/Despicable.jpg");
 videoTrailer5.setAttribute("width", "100%");
 videoTrailer5.setAttribute("height", "350px");
+videoTrailer5.setAttribute("type", "video/mp4");
 videoTrailer5.setAttribute("id", "videoElement5ID");
 
 //make the video attribute be the child to the parent
@@ -642,6 +648,7 @@ videoTrailer6.setAttribute("src", "Clips/Tigers-Apprentice.mp4");
 videoTrailer6.setAttribute("poster", "Images/Tiger-poster.jpg");
 videoTrailer6.setAttribute("width", "100%");
 videoTrailer6.setAttribute("height", "350px");
+videoTrailer6.setAttribute("type", "video/mp4");
 videoTrailer6.setAttribute("id", "videoElement6ID");
 
 //make the video attribute be the child to the parent
@@ -714,6 +721,7 @@ videoTrailer7.setAttribute("src", "Clips/y2mate.com - TROLLS BAND TOGETHER Offic
 videoTrailer7.setAttribute("poster", "Images/Troll-band-together.jpg");
 videoTrailer7.setAttribute("width", "100%");
 videoTrailer7.setAttribute("height", "350px");
+videoTrailer7.setAttribute("type", "video/mp4");
 videoTrailer7.setAttribute("id", "videoElement7ID");
 
 //make the video attribute be the child to the parent
